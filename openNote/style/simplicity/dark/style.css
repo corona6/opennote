@@ -1,0 +1,296 @@
+/** offset all the other colors */
+/*Colors*/
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Helvetica Neue, Helvetica, Arial;
+  font-size: 12px;
+  line-height: 22px;
+  background: #111111;
+  background-attachment: fixed;
+  color: #dddddd;
+  cursor: pointer;
+  /* fix for IOS */
+  margin-top: 15px;
+}
+.form-control,
+select {
+  background-color: transparent;
+  border-width: 1px;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: #444444;
+  box-shadow: none;
+  color: inherit;
+}
+.form-control:focus,
+select:focus {
+  box-shadow: none;
+}
+.form-control .customButton,
+select .customButton {
+  font-weight: bold;
+}
+#update {
+  /*Update span style*/
+  color: #cc0000;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+  /* dont outline text boxes and buttons when they are selected*/
+}
+.startHidden {
+  /*used to initialy hide element so jquery can fade it in*/
+  display: none;
+}
+/* dont color hyperlinks*/
+a:link,
+a:hover,
+a:visited,
+a:active {
+  color: inherit;
+  text-decoration: inherit;
+}
+#menu {
+  background: transparent;
+  padding: 15px 30px;
+  overflow: hidden;
+  font-size: 18px;
+  border-radius: 4px;
+  /*round the corners*/
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+.titleBar {
+  background: transparent;
+  padding: 15px 30px;
+  overflow: hidden;
+  font-size: 18px;
+  margin-top: 10px;
+  border-radius: 4px;
+  /*round the corners*/
+}
+#folderTitleBar {
+  padding: 15px 0px;
+  overflow: hidden;
+  font-size: 18px;
+}
+#folderTitleBar .breadcrumb {
+  margin-bottom: 0;
+  padding: 0 15px 0 0;
+  background: none;
+  float: left;
+}
+#folderTitleBar .breadcrumb > .active {
+  color: inherit;
+}
+#folderTitleBar .breadcrumb li {
+  font-size: 20px;
+}
+#folderTitle {
+  float: left;
+  padding-right: 15px;
+  font-size: 20px;
+}
+.customButton {
+  /*custom button class that removes all browser formating*/
+  border: none;
+  background: transparent;
+  overflow: hidden;
+  background-color: transparent;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  border-radius: 4px;
+  /*round the corners*/
+}
+img {
+  border: none;
+  /*stupid IE*/
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+#sideBar {
+  background: transparent;
+  /*round the corners*/
+  border-radius: 4px ;
+  margin-bottom: 15px;
+  padding: 0 15px;
+}
+.box {
+  width: 250px;
+  height: 150px;
+  padding: 10px;
+  float: left;
+  margin: 0 10px 10px 0;
+  border-width: 1px;
+  border-style: solid;
+  background-color: transparent;
+  border-color: #f06d29;
+  color: #dddddd;
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  /*round the corners*/
+}
+.box:hover {
+  /*overiding css when up class is present*/
+  background-color: #f06d29;
+}
+.box_description {
+  height: 80px;
+  overflow: hidden;
+}
+#itemClass_description {
+  border: none;
+  background: transparent;
+  height: 80px;
+  width: 100%;
+  overflow: auto;
+  resize: none;
+  /* copied from div.event */
+  color: inherit;
+  /*inherit from parrent*/
+  /*coped from body to prevent glitch*/
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+.big,
+.big:hover {
+  width: auto;
+  height: 100%;
+  margin: 0px 0px 0px 0px;
+  /*reset from box*/
+  border-color: #f06d29;
+  background-color: transparent;
+  padding: 10px 30px;
+  overflow: hidden;
+  float: none;
+}
+.folder {
+  /*overiding css when up class is present*/
+  border-color: #8d40cc;
+  /*green*/
+}
+.folder :hover {
+  background-color: #8d40cc;
+}
+div.box.settings {
+  background: #bbbbbb;
+}
+div.box.settings:hover {
+  background: #d4d4d4;
+}
+div.box.big.settings {
+  background: #bbbbbb;
+}
+div.box.big.settings:hover {
+  background: #bbbbbb;
+}
+.search,
+.search:hover {
+  border-color: #72bf33;
+}
+.search option {
+  background-color: #111111;
+}
+.searchPartia,
+.settingsPartialsl {
+  margin-bottom: 30px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 10px 0;
+  font-weight: normal;
+}
+.inputField {
+  border: none;
+  background: transparent;
+  overflow: hidden;
+  resize: none;
+  /* copied from div.event */
+  color: inherit;
+  /*inherit from parrent*/
+  /*coped from body to prevent glitch*/
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  width: 80%;
+}
+.smallInputField {
+  width: 35px;
+}
+/*override*/
+.options {
+  position: absolute;
+  /*Always putting the option on the bottom*/
+  width: 93%;
+  bottom: 0px;
+}
+.bar .options {
+  /*override*/
+  width: 98%;
+}
+.noPadding {
+  padding: 0;
+}
+.noMargin {
+  margin: 0;
+}
+.noShadow {
+  box-shadow: none;
+}
+/*Tree styles*/
+.btn {
+  margin-right: 8px;
+  border: none;
+  height: 20px;
+  width: 15px;
+  background: #8d40cc;
+}
+.btn.collapsed {
+  background: none;
+  border-style: solid;
+  border-color: #8d40cc;
+  border-width: 1px;
+}
+.angular-ui-tree-handle {
+  color: #dddddd;
+  padding: 10px 10px;
+}
+.angular-ui-tree-handle:hover {
+  color: #bc7146;
+  background: #0b0908;
+  border-color: #231d17;
+}
+.angular-ui-tree-placeholder {
+  background: #0f0600;
+  border: 2px dashed #412d24;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.tree-node-content {
+  margin: 10px;
+}
+.angular-ui-tree-empty {
+  display: none;
+}
+#copyRight {
+  color: #656565;
+  margin-left: 35px;
+}
