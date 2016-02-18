@@ -56,8 +56,8 @@ openNote.controller("noteController", function(	$scope,
 			if($scope.note._id !=null)
 				$scope.showDeleteButton = true;
 
-			CKEDITOR.replace("note", config);
 			CKEDITOR.env.isCompatible = true;
+			CKEDITOR.replace("note", config);
 			$rootScope.buttons=[];
 
 			attachWindowUnload();
